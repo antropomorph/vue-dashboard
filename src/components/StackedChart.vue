@@ -18,7 +18,10 @@
                     chart: {
                         type: 'bar',
                         stacked: true,
-                        stackType: '100%'
+                        stackType: '100%',
+                        animations:{
+                            enabled:false
+                        },
                     },
                     xaxis: {
                         categories: ["Гл. маркшейдер", "ЗГД-геолог", "ЗГД-сейсмика", "ЗГД-геол.исслед", "ЗГД-геофизика"],
@@ -32,6 +35,9 @@
                         },
                     },
                 },
+                markers: {
+                    size: 0
+                },
                 responsive: [{
                     breakpoint: 1026,
                     options: {
@@ -42,6 +48,7 @@
                             bar: {
                                 horizontal: true,
                                 dataLabels:{
+                                    enabled: false,
                                     hideOverflowingLabels:true
                                 },
                             },

@@ -14,23 +14,27 @@
         name: "DonutChart",
         data() {
             return {
-                series: [13, 12, 5, 2, 1, 1],
+                series: [13, 12, 5],
                 chartOptions: {
                     chart: {
                         type: 'donut',
+                        animations:{
+                            enabled:false
+                        },
                     },
 
                     legend:{
-                        position: "bottom"
+                        position: "bottom",
+                        floating: false,
                     },
-                    labels:["ОАО Якутскгеофизика", "ООО \"ТНГ-Групп\"", "ОАО \"Якутскгеофизика\"", "ООО Газпромресурс", "ООО ТНГ-Ленское", "ТНГ-групп"],
+                    labels:["ОАО Якутскгеофизика", "ООО \"ТНГ-Групп\"", "ОАО \"Якутскгеофизика\""],
                     responsive: [{
                         breakpoint: 1026,
                         options: {
-                            chart: {
-                                // width: '100',
-                                height: '300',
-                            },
+                            // chart: {
+                            //     // width: '100',
+                            //     height: '300',
+                            // },
                             dataLabels:{
                                 enabled:false
                             },

@@ -25,7 +25,10 @@
                 chartOptions: {
                     chart: {
                         height: 350,
-                        type: 'area'
+                        type: 'area',
+                        animations:{
+                            enabled:false
+                        },
                     },
                     dataLabels: {
                         enabled: false

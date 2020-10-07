@@ -99,6 +99,9 @@
                     chart: {
                         height: 350,
                         type: 'line',
+                        animations:{
+                            enabled:false
+                        },
                     },
                     fill: {
                         type: 'solid',

@@ -104,8 +104,12 @@
 
                 chartOptions: {
                     chart: {
-                        // height: 100,
-                        type: 'rangeBar'
+                        height: "100%",
+                        type: 'rangeBar',
+                        animations: {
+                            enabled: false
+                        },
+                        toolbar:false,
                     },
                     plotOptions: {
                         bar: {
@@ -114,7 +118,18 @@
                         }
                     },
                     xaxis: {
-                        type: 'datetime'
+                        type: 'datetime',
+                        labels: {
+                            // rotate: -45,
+                            // rotateAlways: true,
+                            format: 'dd.MM',
+                            dateTimeFormatter: {
+                                year: 'yyyy',
+                                month: 'MM',
+                                day: 'dd',
+                                hour: 'HH:mm'
+                            }
+                        }
                     },
                     stroke: {
                         width: 1
@@ -125,7 +140,9 @@
                     },
                     legend: {
                         position: 'bottom',
-                        horizontalAlign: 'left'
+                        horizontalAlign: 'center',
+                        floating: false,
+                        // offsetY: 20,
                     }
                 },
 
@@ -135,9 +152,9 @@
 </script>
 <style scoped>
     #chart {
-        /*max-width: 760px;*/
-        /*margin: 35px auto;*/
-        /*opacity: 0.9;*/
-        /*border: #000000;*/
+        max-width: 760px;
+        margin: 35px auto;
+        opacity: 0.9;
+        border: #000000;
     }
 </style>

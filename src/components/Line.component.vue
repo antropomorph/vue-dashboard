@@ -47,7 +47,10 @@
                         // },
                         toolbar: {
                             show: false
-                        }
+                        },
+                        animations:{
+                            enabled:false
+                        },
                     },
                     // colors: ['#ea0001', '#181db8'],
                     // dataLabels: {
