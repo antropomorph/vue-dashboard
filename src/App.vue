@@ -123,6 +123,7 @@
             title: 'Удаленное рабочее место',
             drawer: false,
             tab: null,
+
             // menu: [this.dashboards
             // {
             //     name: 'Сводки',
